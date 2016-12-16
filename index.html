@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>听指挥的小孩</title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+    <div id="checkerBoard">
+        <div id="rowNumber">
+            <span></span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+        </div>
+        <div id="colNumber">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+        </div>
+        <div id="map">
+            <div id="chess">
+                <img src="./image/chess.gif" width="42px" height="42px" >
+            </div>
+        </div>
+    </div>
+    <div id="control">
+        <div id="number">
+            <div id="wrap">
+                <span>1</span>
+            </div>
+        </div>
+        <form>
+            <textarea rows="8" cols="40"></textarea>
+            <button id="button1">执行</button>
+            <button id="button2">随机建墙</button>
+        </form>
+    </div>
+
+    <!--控制器 -->
+    <script src="scripts/controller.js"></script>
+    <!--调用控制器，执行指令-->
+    <script src="scripts/doCommand.js"></script>
+    <!--界面初始化-->
+    <script src="scripts/init.js"></script>
+    <!--验证输入指令-->
+    <script src="scripts/verifier.js"></script>
+    <!--入口文件-->
+    <script src="scripts/index.js"></script>
+</body>
+</html>
